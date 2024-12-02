@@ -57,6 +57,13 @@ def get_expiration(date_str):
 
     return expiration
 
+signal_to_buy_sell = {
+    "Entry Short": "Sell",
+    "Exit Short": "Buy",
+    "Entry Long": "Buy",
+    "Exit Long": "Sell",
+}
+
 def main(input):
     with open(input, 'r') as infile, open(f"{input[:-4]}_tradezella.csv", 'w', newline='') as outfile:
         reader = csv.reader(infile)
@@ -67,8 +74,8 @@ def main(input):
         writer.writerow(["Date", "Time", "Symbol", "Buy/Sell", "Quantity", "Price", "Spread", "Expiration", "Strike", "Call/Put", "Commission", "Fees"])
 
         for row in reader:
-            signal, date_time, price, contract_count = row[2], row[3], row[4], row[5]
-            buy_sell = signal.split()[0]
+            signal, date_time, price, contract_count = row[1], row[3], row[4], row[5]
+            buy_sell = signal_to_buy_sell[signal]
 
             date, time = date_time.split()
             time = f"{time}:00"
