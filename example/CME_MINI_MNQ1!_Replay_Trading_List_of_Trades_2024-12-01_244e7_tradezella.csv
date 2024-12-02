@@ -1,0 +1,5 @@
+Date,Time,Symbol,Buy/Sell,Quantity,Price,Spread,Expiration,Strike,Call/Put,Commission,Fees
+10/14/2021,23:00:00,MNQ,Buy,1,15077.75,Future,MAR 2022,,,0.5,0.37
+10/11/2021,15:00:00,MNQ,Sell,1,14596.00,Future,MAR 2022,,,0.5,0.37
+10/10/2021,19:00:00,MNQ,Sell,1,14725.25,Future,MAR 2022,,,0.5,0.37
+10/07/2021,07:00:00,MNQ,Buy,1,14962.75,Future,MAR 2022,,,0.5,0.37

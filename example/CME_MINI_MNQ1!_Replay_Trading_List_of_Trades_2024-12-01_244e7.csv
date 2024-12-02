@@ -1,0 +1,5 @@
+Trade #,Type,Signal,Date/Time,Price USD,Contracts,Profit USD,Profit %,Cum. Profit USD,Cum. Profit %,Run-up USD,Run-up %,Drawdown USD,Drawdown %
+2,Exit Short,Buy market order,2021-10-14 23:00,15077.75,1,-965.24,-3.31,-1441.98,-21.34,20.13,0.07,1033.37,3.54
+2,Entry Short,Sell market order,2021-10-11 15:00,14596.00,1,-965.24,-3.31,-1441.98,-21.34,20.13,0.07,1033.37,3.54
+1,Exit Long,Sell market order,2021-10-10 19:00,14725.25,1,-476.74,-1.59,-476.74,-9.53,69.63,0.23,519.37,1.74
+1,Entry Long,Buy market order,2021-10-07 07:00,14962.75,1,-476.74,-1.59,-476.74,-9.53,69.63,0.23,519.37,1.74
