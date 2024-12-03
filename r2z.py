@@ -49,8 +49,8 @@ def get_expiration(date_str):
     for switch_date_str, expiration_str in switch_date_to_expiration.items():
         switch_date = epoch(switch_date_str)
         if date < switch_date:
-            expiration = expiration_str
             break
+        expiration = expiration_str
     
     if expiration == "NO_EXP":
         raise ValueError("No expiration found for the given date")
